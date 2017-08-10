@@ -54,7 +54,6 @@ if(isset($_POST['login'])){
 
 
 include('includes/header.php');
-
 ?>
 
 <h1>Bahamas Sports Physio Center</h1>

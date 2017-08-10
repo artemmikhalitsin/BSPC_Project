@@ -1,4 +1,12 @@
 <?php
+include('includes/connection.php');
+
+$patient_query = "SELECT * from patients";
+$patients = mysqli_query($conn, $patient_query);
+ ?>
+
+
+<?php
 include('includes/header.php');
 ?>
 
@@ -17,6 +25,29 @@ include('includes/header.php');
         <th>Appointment</th>
         <th>Update</th>
     </tr>
+    <?php
+        while($row = mysqli_fetch_row($patients)){
+          $PHN = $row[0];
+          $fName = $row[1];
+          $lName = $row[2];
+          $DOB = $row[3];
+          $Address = $row[5];
+          printf("
+          <tr>
+              <td>$PHN</td>
+              <td>$fName $lName</td>
+              <td>?????</td>
+              <td>?????</td>
+              <td>$Address</td>
+              <td>?????</td>
+              <td>?????</td>
+              <td>?????</td>
+              <td>?????</td>
+              <td><a href=\"update.php\" type=\"button\" class=\"btn btn-default btn-primary btn-sm\"><span class=\"glyphicon glyphicon-edit\"></span></a></td>
+          </tr>
+          ");
+        }
+     ?>
     <tr>
         <td>123456789</td>
         <td>John Doe</td>
