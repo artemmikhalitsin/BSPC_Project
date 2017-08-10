@@ -56,6 +56,8 @@ if(isset($_GET))
             <th>Therapists</th>
             <th>Treatments</th>
             <th>Equipment</th>
+            <th>Amount</th>
+            <th>Payment Type</th>
         </tr>
     </table>
   </div>
