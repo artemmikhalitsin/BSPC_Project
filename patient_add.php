@@ -1,29 +1,4 @@
-<script>
-function checkEmptyFields() {
-  var fields = document.getElementsByTagName("INPUT");
-  var empty = 0;
-  for(var i = 0; i < fields.length; i++){
-    if(fields[i].value == ""){
-      var field_name = fields[i].name;
-      var labels = document.getElementsByTagName("LABEL");
-      for(var j = 0; j < labels.length; j++)
-      {
-        if(labels[j].htmlFor == field_name)
-        {
-          labels[j].className += " text-danger";
-        }
-      }
-      empty++;
-    }
-  }
-  if(empty > 0)
-  {
-    console.log('non-zero empty');
-    return false;
-  }
-  return true;
-}
-</script>
+<script src="js/func.js"></script>
 
 <?php
 include('includes/header.php');

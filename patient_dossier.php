@@ -14,6 +14,7 @@ if(isset($_GET))
 
 <!-- TODO: WRITE TO THE DATABASE-->
 <!-- TODO: On submit verify (via php i suppose) that a patient is over 18-->
+<!-- TODO: Maybe make the fields editable when viewed by an admin -->
 
 <div class="row">
   <div class="col-sm-5 col-md-4">
@@ -42,10 +43,8 @@ if(isset($_GET))
     <h3>Future Appointments</h3>
     <table class="table table-striped table-bordered">
         <tr>
-        <!--TODO: IDK what to put here-->
         </tr>
     </table>
-  </div>
   </div>
   <div class="col-sm-5 col-md-4">
     <h3> Past Visits </h3>
