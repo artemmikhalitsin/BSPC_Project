@@ -56,7 +56,7 @@ include('includes/header.php');
      ?>
 
     <tr>
-        <td colspan="7"><div class="text-center"><a href="add.php" type="button" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus"></span> Add Patient</a></div></td>
+        <td colspan="7"><div class="text-center"><a href="patient_add.php" type="button" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-plus"></span> Add Patient</a></div></td>
     </tr>
 </table>
 <?php endif ?>
